@@ -1,7 +1,9 @@
 import '../enums/payment_status.dart';
 import '../models/upi_payment_response.dart';
 
+/// Helper class to parse UPI response strings.
 class UpiResponseParser {
+  /// Parses a raw response string from a UPI app into a [UpiPaymentResponse].
   static UpiPaymentResponse parse(String response) {
     // Typical response format: txnId=...&responseCode=...&Status=...&txnRef=...
     final Map<String, String> data = {};

@@ -1,3 +1,8 @@
+## 1.0.1
+
+* Improved API documentation for all public members.
+* Fixed missing documentation in example app.
+
 ## 1.0.0
 
 * Initial release of `flutter_upi_helper`.

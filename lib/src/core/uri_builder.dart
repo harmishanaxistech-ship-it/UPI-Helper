@@ -1,6 +1,8 @@
 import 'constants.dart';
 
+/// Helper class to build UPI payment URIs.
 class UpiUriBuilder {
+  /// Builds a [Uri] for a UPI payment with the given parameters.
   static Uri build({
     required String upiId,
     required String receiverName,

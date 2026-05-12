@@ -1,11 +1,24 @@
+/// Supported UPI applications for payment.
 enum UpiApp {
+  /// Google Pay application.
   googlePay,
+
+  /// PhonePe application.
   phonePe,
+
+  /// Paytm application.
   paytm,
+
+  /// BHIM application.
   bhim,
+
+  /// Amazon Pay application.
   amazonPay,
+
+  /// Generic UPI intent handler.
   generic;
 
+  /// Returns the Android package name for the specific UPI app.
   String get packageName {
     switch (this) {
       case UpiApp.googlePay:
@@ -23,6 +36,7 @@ enum UpiApp {
     }
   }
 
+  /// Returns the display name of the UPI app.
   String get appName {
     switch (this) {
       case UpiApp.googlePay:

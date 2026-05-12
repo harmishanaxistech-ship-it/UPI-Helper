@@ -5,7 +5,9 @@ void main() {
   runApp(const MyApp());
 }
 
+/// Main application widget for the demo.
 class MyApp extends StatelessWidget {
+  /// Creates a [MyApp] instance.
   const MyApp({super.key});
 
   @override
@@ -21,7 +23,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
+/// Home page for the UPI Helper demo.
 class UpiDemoPage extends StatefulWidget {
+  /// Creates a [UpiDemoPage] instance.
   const UpiDemoPage({super.key});
 
   @override

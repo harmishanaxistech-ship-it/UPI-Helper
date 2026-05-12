@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 import '../models/upi_app_info.dart';
 
+/// A beautiful bottom sheet widget that allows users to select from installed UPI apps.
 class UpiAppPicker extends StatelessWidget {
+  /// List of installed UPI apps to display.
   final List<UpiAppInfo> apps;
+
+  /// Callback function when an app is selected.
   final Function(UpiAppInfo) onAppSelected;
+
+  /// Title of the picker bottom sheet.
   final String title;
 
+  /// Creates a [UpiAppPicker] instance.
   const UpiAppPicker({
     super.key,
     required this.apps,
@@ -92,6 +99,7 @@ class UpiAppPicker extends StatelessWidget {
     );
   }
 
+  /// Static helper to show the [UpiAppPicker] as a modal bottom sheet.
   static Future<void> show({
     required BuildContext context,
     required List<UpiAppInfo> apps,

@@ -5,6 +5,9 @@ import 'upi_service.dart';
 import 'uri_builder.dart';
 import '../exceptions/upi_exception.dart';
 
+/// Main entry point for the UPI Helper package.
+/// 
+/// Provides methods to detect installed UPI apps and initiate payments.
 class UpiHelper {
   static final UpiService _service = UpiService();
 

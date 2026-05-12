@@ -6,9 +6,11 @@ import '../models/upi_payment_response.dart';
 import '../utils/response_parser.dart';
 import '../exceptions/upi_exception.dart';
 
+/// Internal service class to communicate with platform-specific code.
 class UpiService {
   static const MethodChannel _channel = MethodChannel('flutter_upi_helper');
 
+  /// Fetches the list of installed UPI apps from the platform.
   Future<List<UpiAppInfo>> getInstalledApps() async {
     try {
       final List<dynamic>? apps = await _channel.invokeMethod('getInstalledApps');
@@ -38,6 +40,7 @@ class UpiService {
     }
   }
 
+  /// Launches the payment intent with the given [uri] and optional [app].
   Future<UpiPaymentResponse> launchPayment({
     required Uri uri,
     UpiApp? app,

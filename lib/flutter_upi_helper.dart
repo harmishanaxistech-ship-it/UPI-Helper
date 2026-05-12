@@ -1,4 +1,4 @@
-library flutter_upi_helper;
+library;
 
 export 'src/core/upi_helper.dart';
 export 'src/enums/upi_app.dart';

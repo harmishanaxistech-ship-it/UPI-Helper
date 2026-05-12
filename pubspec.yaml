@@ -1,6 +1,9 @@
 name: flutter_upi_helper
 description: "A production-ready Flutter package for handling UPI payments in India. Easily launch major UPI apps and handle payment responses."
 version: 1.0.0
+homepage: https://github.com/harmishanaxistech-ship-it/UPI-Helper
+repository: https://github.com/harmishanaxistech-ship-it/UPI-Helper.git
+issue_tracker: https://github.com/harmishanaxistech-ship-it/UPI-Helper/issues
 
 environment:
   sdk: '>=3.10.0 <4.0.0'

@@ -14,5 +14,5 @@ class UpiAppNotInstalledException extends UpiException {
 }
 
 class UpiInvalidParamsException extends UpiException {
-  UpiInvalidParamsException(String message) : super(message);
+  UpiInvalidParamsException(super.message);
 }

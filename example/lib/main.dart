@@ -40,7 +40,6 @@ class _UpiDemoPageState extends State<UpiDemoPage> {
 
   List<UpiAppInfo> _installedApps = [];
   bool _isLoading = false;
-  UpiPaymentResponse? _lastResponse;
 
   @override
   void initState() {
@@ -75,10 +74,6 @@ class _UpiDemoPageState extends State<UpiDemoPage> {
         note: _noteController.text,
         app: appInfo.app,
       );
-
-      setState(() {
-        _lastResponse = response;
-      });
 
       _showResultDialog(response);
     } catch (e) {
